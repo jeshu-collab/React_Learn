@@ -7,7 +7,10 @@ export default function App() {
     console.log("add value", count);
     setCount(count + 1);
   }
-  
+  const removeValue = () => {
+    console.log("remove value", count);
+    setCount(count - 1);
+  }
   return (
    <>
     <h1>Jokes</h1>
@@ -15,7 +18,7 @@ export default function App() {
 
     <button onClick={addValue}>Add value </button>
     <br />
-    <button>remove value</button>
+    <button onClick={removeValue}>remove value</button>
    </>
   )
 }
