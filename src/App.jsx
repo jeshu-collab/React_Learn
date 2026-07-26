@@ -1,24 +1,21 @@
-import Joke from "./Joke";
-
+//import Joke from "./Joke";
+import { useState } from "react";
 export default function App() {
-  return (
-    <main>
-      <Joke
-        setup="hi ra a" punchline="hi ra a punchline"
-      />
-      <Joke
-        setup="hi ra b" punchline="hi ra b punchline"
-      />
-      <Joke
-        setup="hi ra c" punchline="hi ra c punchline"
-      />
-      <Joke
-        setup="hi ra d" punchline="hi ra d punchline"
-      />
-      <Joke
-        setup="hi ra e" punchline="hi ra e punchline"
-      />
+  let [count, setCount] = useState(0);
 
-    </main>
+  const addValue = () => {
+    console.log("add value", count);
+    setCount(count + 1);
+  }
+  
+  return (
+   <>
+    <h1>Jokes</h1>
+    <h2>count: {count}</h2>
+
+    <button onClick={addValue}>Add value </button>
+    <br />
+    <button>remove value</button>
+   </>
   )
 }
