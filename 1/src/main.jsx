@@ -4,6 +4,7 @@ import Conditional_rendering from "./conditional_rendering";
 import Array from "./Array";
 import Mybutton from "./Mybutton";
 import Counter from "./counter";
+import Car from "./car";
 const root = createRoot(document.getElementById("root"));
 
 
@@ -14,5 +15,6 @@ root.render(
         <Array />
         <Mybutton />
         <Counter />
+        <Car />
     </>
 )
