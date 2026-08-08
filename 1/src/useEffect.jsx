@@ -6,7 +6,7 @@ export default function UseEffect() {
         setTimeout(() => {
             setCount(count => count + 1);
         }, 2000);
-    });
+    }, [count]);
     return (
         <>
             <h1>I've rendered {count} times</h1>

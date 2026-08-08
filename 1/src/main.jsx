@@ -6,6 +6,7 @@ import Mybutton from "./Mybutton";
 import Counter from "./counter";
 import Car from "./car";
 import UseEffect from "./useEffect";
+import UseRef from "./useRef";
 const root = createRoot(document.getElementById("root"));
 
 
@@ -18,5 +19,6 @@ root.render(
         <Counter />
         <Car />
         <UseEffect />
+        <UseRef />
     </>
 )
